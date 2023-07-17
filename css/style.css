@@ -1,0 +1,45 @@
+/* reset css */
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+/* regle generale*/
+
+body a{
+    
+}
+
+
+/* header  */
+ .header{
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between; */
+ }
+ header a{
+    /* list-style:none; */
+ }
+.logo {
+    padding:10px
+    
+}
+
+
+/* bannier */
+
+/* presentation */
+
+/* section personne */
+
+/* produit */
+
+/* section interaction */
+
+/* section temoignage */
+
+/* section autres liens */
+
+/* footer */

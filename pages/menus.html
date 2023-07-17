@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* 
+                ===============
+                    etape 0 
+                ===============
+        on commence par definir une petite liste 
+        de règle générale.
+ */
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            text-decoration: none;;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li{
+            margin: 0 20px 0 20px ;
+        }
+
+
+
+/* 
+        =========================================
+             etape 1:MIse en forme de la Top-Bar
+        =========================================
+        on commence par crée un header et on lui 
+        attribut un certain nombre de propriété 
+        NB: pas trés obligé aussi 
+
+ */
+        header{
+            background-color: rgb(219, 49, 49);
+            height: 8vh;
+            display: flex;
+            align-items: center;
+            transition: all 2s;
+        }
+
+
+        header:hover {
+            /* transform: scaleX(5px); */
+            opacity: 0.5;
+            background-color: blue;
+        }
+
+/* 
+        =======================================
+             etape 2:Aspect et forme des menus
+        =======================================
+        on ajoute donc des menus on applique le 
+        CSS conformeà cess propres préférences ou 
+         biensoins
+
+ */
+        .gd-menu {
+            position: relative;
+            margin: auto;
+            display: flex;
+            flex-direction: row ;
+            align-items: center;
+        }
+        
+ /* 
+        =====================================
+             etape 3: Forme et invisibilité
+         ====================================
+        on procède maaintenant par injection 
+        des sous menus dans les menus parents
+        on applique le CSS conformeà 
+        cess propres préférences ou 
+         biensoins
+         
+ */
+         .pt-menu{
+            display: none;
+            background-color: blue;
+            width: 200px;
+            position:absolute;
+            margin-top: 18px
+        }
+
+
+/* 
+        ======================================
+            etape 4: Réaparution et fond animé
+        ======================================
+        on ajoute donc des menus on applique le 
+        CSS conformeà cess propres préférences ou 
+         biensoins
+         
+ */
+        .gd-menu li :hover{
+            background-color: aliceblue;
+            height: 8vh ;
+        }
+        .gd-menu li:hover .pt-menu{
+            content: "super";
+            display: block;
+        }
+
+
+
+/* 
+        ==========================================
+            etape Fin : Fin du procéssus et ajout
+                      des nouvelles sections
+        ==========================================
+        on ajoute donc des menus on applique le 
+        CSS conformeà cess propres préférences ou 
+         biensoins
+         
+ */
+        section{
+            background-color: aqua;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="gd-menu">
+            <li><a href="#">lienX</a></li>
+            <li>
+                
+                <a href="#">lien1</a>
+
+                <ul class="pt-menu">
+                    <li><a href="#">sous lien1 -1</a></li>
+                    <li><a href="#">sous lien1-2</a></li>
+                    <li><a href="#">sous lien1-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">lien2</a>
+                <ul class="pt-menu">
+                    <li><a href="#">sous lien2-1</a></li>
+                    <li><a href="#">lien2-2</a></li>
+                    <li><a href="#">lien2-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">lien3</a></li>
+            <li><a href="#">lien4</a>
+                <ul class="pt-menu">
+                    <li><a href="#">lien4-1</a></li>
+                    <li><a href="#">lien4-2</a></li>
+                    <li><a href="#">lien4-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">lienN</a></li>
+        </ul>
+    </header>
+
+    <section>
+
+    </section>
+</body>
+</html>
